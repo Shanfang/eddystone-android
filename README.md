@@ -20,7 +20,7 @@ In your gradle.build (app) file:
 ```
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.github.BlueBiteLLC:Eddystone-Android:d195107b1e' // Add this line
+    compile 'com.github.BlueBiteLLC:Eddystone-Android:-SNAPSHOT' // Add this line
 }
 ```
 
