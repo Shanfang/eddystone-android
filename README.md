@@ -1,14 +1,26 @@
 # Eddystone-Android
 
 ## Installation
-Compile library using gradle
+
+We use [jitPack](https://jitpack.io) to deploy our library.
+
+In your gradle.build (Project) file:
+
+```
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" } // Add this line
+    }
+}
+```
 
 In your gradle.build (app) file:
 
 ```
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.bluebite.andres.eddystone'
+    compile 'com.github.BlueBiteLLC:Eddystone-Android:d195107b1e' // Add this line
 }
 ```
 
