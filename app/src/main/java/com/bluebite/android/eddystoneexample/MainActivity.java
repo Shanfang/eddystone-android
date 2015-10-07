@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements ScannerDelegate {
         mBeaconAdapter = new BeaconAdapter(this, R.layout.beacon_list_item, mUrls);
         beaconListView.setAdapter(mBeaconAdapter);
         Global.logging = true;
+        Global.expireTimer = 30000;
         Scanner.start(this);
     }
 

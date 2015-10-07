@@ -40,6 +40,10 @@ protected void onCreate(Bundle savedInstanceState) {
 
     // Enable logging
     Global.logging = true;
+    
+    // Set millisecond expiration for beacons before they are removed
+    // Set here to 30 seconds, default is 15 seconds
+    Global.expireTimer = 30000;
 
     // Start scanning
     Scanner.start(this);

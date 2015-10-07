@@ -47,7 +47,7 @@ public class Scanner implements BeaconDelegate {
                     mDiscoveredBeacons.remove(address);
                     notifyChange();
                 }
-            }, 15000);
+            }, Global.expireTimer);
 
         }
     };
