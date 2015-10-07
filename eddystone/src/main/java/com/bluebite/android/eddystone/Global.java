@@ -9,7 +9,7 @@ public class Global {
     public static int expireTimer = 15000;
     public static boolean logging = false;
 
-    public enum FrameType {
+    protected enum FrameType {
         URL,
         UID,
         TLM
